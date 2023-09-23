@@ -6,3 +6,9 @@ function leerArchivo() {
   return array;
 }
 console.log(leerArchivo())
+
+
+function guardar(parametro){
+    let newLista = JSON.stringify(parametro);
+    fs.writeFileSync(path,newLista);
+}
